@@ -1,0 +1,56 @@
+.logo-button {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .logo-button:hover {
+    transform: scale(1.1);
+  }
+  .background {
+    background-color: rgba(0, 0, 0, 0); 
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    margin-top: -30px; 
+    z-index: 1;
+  }
+  
+  .text-footer {
+    color: white;
+    margin: 0;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      background-size: auto; /* Adjust background size for small screens */
+    }
+  
+    #container {
+      width: 80%; /* Adjust container width for better readability on small screens */
+      margin: auto; /* Center the container */
+      padding: 10px;
+      
+    }
+  
+    #dropdown {
+      max-width: 80%; /* Limit the dropdown width for small screens */
+      margin: auto; /* Center the dropdown */
+    }
+  
+    select {
+      width: 100%; /* Make the dropdown full width on small screens */
+      padding: 8px; /* Adjust padding for better spacing */
+      font-size: 14px; /* Adjust font size for better readability */
+    }
+  
+    .logo-container {
+      flex-direction: column; /* Stack logos vertically on small screens */
+    }
+  
+    .logo-button {
+      max-width: 40px; /* Adjust max-width of logo buttons for small screens */
+      margin: 5px; /* Add margin for spacing between logo buttons */
+    }
+
+  }

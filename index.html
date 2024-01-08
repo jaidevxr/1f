@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+  <link rel="stylesheet" href="css/style.css">
+  <title>Your Notes Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('alex-lvrs-2zDw14yCYqk-unsplash.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Full viewport height */
+      color: white; /* Adjust text color to be visible on the background */
+    }
+
+    #container {
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+      padding: 12px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    #notes {
+      margin-bottom: 20px;
+    }
+
+    #dropdown {
+      margin-bottom: 20px;
+    }
+
+    select {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 60px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <div id="notes">
+    <h1>Notes</h1>
+    <h1>1F OFFICIAL</h1>
+  </div>
+
+  <div id="dropdown">
+    <label for="subjectDropdown">Select Subject:</label>
+    <br><br>
+    <select id="subjectDropdown" onchange="redirectToSubject()">
+      <option value="" selected disabled>Select a subject</option>
+      <option value="subject1">MATRICES AND CALCULUS</option>
+      <option value="subject2">PHYSICS</option>
+      <option value="subject3">ENGINEERING MECHANICS</option>
+      <option value="subject4">ENGINEERING ELECTRONICS</option>
+      <option value="subject5">C</option>
+      <option value="subject6">EVS</option>
+    </select>
+  </div>
+
+  <div class="logo-container">
+    <p>Join us:</p>
+    <a href="https://www.instagram.com/the1f.vibes" target="_blank">
+      <img class="logo-button" src="insta.png" alt="Instagram Logo">
+    </a>
+    <a href="https://chat.whatsapp.com/I4mgCKXnNIKGJCvfSANHNn" target="_blank">
+      <img class="logo-button" src="Whatsapp1.png" alt="WhatsApp Logo">
+    </a>
+    <a href="https://t.me/+oFzbOwf5BBEyNzg9" target="_blank">
+      <img class="logo-button" src="Telegram1.png" alt="Telegram Logo">
+    </a>
+  </div>
+<script>
+  function redirectToSubject() {
+    var dropdown = document.getElementById("subjectDropdown");
+    var selectedSubject = dropdown.value;
+
+    if (selectedSubject) {
+      // Redirect to the specific website for the selected subject
+      switch (selectedSubject) {
+        case "subject1":
+          window.location.href = "https://drive.google.com/drive/folders/1wi09FsdJOQZnB4kier05inKkEwPUOm6D";
+          break;
+        case "subject2":
+          window.location.href = "https://drive.google.com/drive/folders/1wY5OfRyOHRIMi18IgkVVLxkAFKLX4cXZ";
+          break;
+        case "subject3":
+          window.location.href = "https://drive.google.com/drive/folders/1wQWgkFKFjB2kFpgNYbltCR2I0ws5bcuT";
+          break;
+        case "subject4":
+          window.location.href = "https://drive.google.com/drive/folders/1wd-c5eIJlViaddN5PAk1VWcoQE_qJc_k";
+          break;
+        case "subject5":
+          window.location.href = "https://drive.google.com/drive/folders/1wi09FsdJOQZnB4kier05inKkEwPUOm6D";
+          break;
+        case "subject6":
+          window.location.href = "https://drive.google.com/drive/folders/1weFp-8gXVtY_7oIGh3au9IGuW68zV9Q_";
+          break;
+        default:
+          break;
+      }
+    }
+  }
+</script>
+<footer class="background">
+  <p class="text-footer">
+      Copyright &copy; 2027 - All rights reserved
+  </p>
+</footer>
+<script src="js/resp.js"></script>
+</body>
+</html>
