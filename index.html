@@ -61,7 +61,7 @@
     <h1>1F OFFICIAL</h1>
   </div>
 
-  <div id="dropdown">
+    <div id="dropdown">
     <label for="subjectDropdown">Select Subject:</label>
     <br><br>
     <select id="subjectDropdown" onchange="redirectToSubject()">
@@ -78,7 +78,7 @@
   <div class="logo-container">
     <p>Join us:</p>
     <a href="https://www.instagram.com/the1f.vibes" target="_blank">
-      <img class="logo-button" src="Insta.png" alt="Instagram Logo">
+      <img class="logo-button" src="insta.png" alt="Instagram Logo">
     </a>
     <a href="https://chat.whatsapp.com/I4mgCKXnNIKGJCvfSANHNn" target="_blank">
       <img class="logo-button" src="Whatsapp1.png" alt="WhatsApp Logo">
@@ -86,8 +86,33 @@
     <a href="https://t.me/+oFzbOwf5BBEyNzg9" target="_blank">
       <img class="logo-button" src="Telegram1.png" alt="Telegram Logo">
     </a>
+  </a>
+  <br>
+  <br>
+  <button class="custom-button" onclick="redirectToStudyRoom()">Study Room</button>
   </div>
+  <style>
+      .custom-button {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    align-items: center;
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 16px; /* Font size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  .custom-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.1);
+  }
+  </style>
 <script>
+  function redirectToStudyRoom() {
+    // Redirect to the study room website
+    window.location.href = "https://iamharshit188.github.io/study-session";
+  }
   function redirectToSubject() {
     var dropdown = document.getElementById("subjectDropdown");
     var selectedSubject = dropdown.value;
@@ -96,7 +121,7 @@
       // Redirect to the specific website for the selected subject
       switch (selectedSubject) {
         case "subject1":
-          window.location.href = "https://drive.google.com/drive/folders/1z_rg9KOLmh4IcYdbx8B8sKgOdEDzdGEj?usp=drive_link";
+          window.location.href = "https://drive.google.com/drive/folders/1wi09FsdJOQZnB4kier05inKkEwPUOm6D";
           break;
         case "subject2":
           window.location.href = "https://drive.google.com/drive/folders/1wY5OfRyOHRIMi18IgkVVLxkAFKLX4cXZ";
@@ -105,7 +130,7 @@
           window.location.href = "https://drive.google.com/drive/folders/1wQWgkFKFjB2kFpgNYbltCR2I0ws5bcuT";
           break;
         case "subject4":
-          window.location.href = "https://drive.google.com/drive/folders/1YUN6o_IDT_7LCwkReDqWTpkCeFdv7N-6?usp=drive_link";
+          window.location.href = "https://drive.google.com/drive/folders/1wd-c5eIJlViaddN5PAk1VWcoQE_qJc_k";
           break;
         case "subject5":
           window.location.href = "https://drive.google.com/drive/folders/1wi09FsdJOQZnB4kier05inKkEwPUOm6D";
